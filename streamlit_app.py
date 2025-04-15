@@ -10,6 +10,9 @@ st.title('Kibesouhei')
 # テキスト入力ボックスを作成し、ユーザーからの入力を受け取る
 user_input = st.time_input('あなたの名前を入力してください')
 
+st.write(user_input)
+
+a_list = st.multiselect("アトラクションを選択",[1,2,3])
 # ボタンを作成し、クリックされたらメッセージを表示
 if st.button('挨拶する'):
     if user_input:  # 名前が入力されているかチェック
